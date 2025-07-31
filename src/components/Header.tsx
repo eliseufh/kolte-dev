@@ -23,14 +23,14 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to="/projects" className="nav-link">
+              <span className="nav-link disabled" title="Coming Soon">
                 Projects
-              </Link>
+              </span>
             </li>
             <li>
-              <Link to="/blog" className="nav-link">
+              <span className="nav-link disabled" title="Coming Soon">
                 Blog
-              </Link>
+              </span>
             </li>
             <li>
               <Link to="/contact" className="nav-link">
