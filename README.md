@@ -5,5 +5,3 @@ Um website pessoal desenvolvido com React e TypeScript, criado para showcases de
 ## 🤝 Contribuições
 
 Este é um projeto pessoal, mas sugestões e feedback são sempre bem-vindos!
-
-⭐ Desenvolvido com React e muito ☕ por [Kolte](https://github.com/kolte)
