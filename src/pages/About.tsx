@@ -5,91 +5,80 @@ const About = () => {
     <div className="about-page">
       <div className="container">
         <section className="about-hero">
-          <h1>Sobre Mim</h1>
+          <h1>About Me</h1>
           <p className="lead">
-            Conheça mais sobre minha jornada como desenvolvedor e minha paixão
-            pela tecnologia
+            Learn more about my journey as a developer and my passion for
+            technology
           </p>
         </section>
 
         <section className="about-content">
           <div className="about-text">
-            <h2>Minha História</h2>
+            <h2>My Story</h2>
             <p>
-              Sou um desenvolvedor apaixonado por tecnologia com experiência
-              sólida em .NET e atualmente expandindo minhas habilidades para o
-              ecossistema React. Minha jornada na programação começou com a
-              curiosidade de entender como as coisas funcionam "por trás dos
-              panos".
+              I'm a developer passionate about technology with solid experience
+              in .NET and currently expanding my skills to modern frontend
+              technologies. My programming journey began with curiosity to
+              understand how things work "behind the scenes".
             </p>
 
             <p>
-              Com anos de experiência em desenvolvimento backend usando C# e
-              .NET Core, construí APIs robustas, sistemas de gerenciamento e
-              aplicações enterprise. Agora, estou mergulhando no mundo frontend
-              para criar experiências completas e interativas.
+              With experience in backend development using C# and .NET Core, I
+              build robust full-stack applications, integrating DevExpress
+              components and IBM AS400 systems. I design, implement and manage
+              relational databases, ensuring data integrity and optimized
+              structure. I also develop responsive and intuitive front-end
+              interfaces with strong focus on performance and usability.
             </p>
 
-            <h2>Experiência Profissional</h2>
+            <h2>Professional Experience</h2>
             <div className="experience">
               <div className="experience-item">
-                <h3>Desenvolvedor .NET Senior</h3>
-                <p className="company">Empresa Tech • 2020 - Presente</p>
+                <h3>Junior Developer</h3>
+                <p className="company">Current Position • 2024 - Present</p>
                 <ul>
-                  <li>Desenvolvimento de APIs REST usando ASP.NET Core</li>
-                  <li>Implementação de arquiteturas limpas e padrões SOLID</li>
                   <li>
-                    Integração com bancos de dados SQL Server e PostgreSQL
+                    Develop, test and maintain full-stack applications using
+                    .NET Core (C#)
                   </li>
-                  <li>Mentoria de desenvolvedores juniores</li>
-                </ul>
-              </div>
-
-              <div className="experience-item">
-                <h3>Desenvolvedor .NET Pleno</h3>
-                <p className="company">Software House • 2018 - 2020</p>
-                <ul>
-                  <li>Desenvolvimento de sistemas web usando MVC</li>
-                  <li>Trabalho com Entity Framework e LINQ</li>
-                  <li>Implementação de testes unitários e integração</li>
-                  <li>Participação em code reviews e melhorias de processo</li>
+                  <li>Integrate DevExpress components and IBM AS400 systems</li>
+                  <li>Design, implement and manage relational databases</li>
+                  <li>Develop responsive and intuitive front-end interfaces</li>
+                  <li>Focus on performance optimization and data integrity</li>
                 </ul>
               </div>
             </div>
 
-            <h2>Educação & Certificações</h2>
+            <h2>Education</h2>
             <div className="education">
               <div className="education-item">
-                <h3>Bacharel em Ciência da Computação</h3>
-                <p>Universidade Federal • 2014 - 2018</p>
-              </div>
-              <div className="education-item">
-                <h3>Microsoft Certified: Azure Developer Associate</h3>
-                <p>Microsoft • 2022</p>
+                <h3>ISTEC - Higher Institute of Advanced Technologies of Lisbon</h3>
+                <p>Higher Professional Technical Course, Software Development • 2023 - 2025</p>
               </div>
             </div>
           </div>
 
           <div className="about-sidebar">
             <div className="skills-detailed">
-              <h3>Tecnologias & Ferramentas</h3>
+              <h3>Technologies & Tools</h3>
 
               <div className="skill-category">
                 <h4>Backend</h4>
                 <div className="skill-tags">
                   <span>C#</span>
-                  <span>ASP.NET Core</span>
-                  <span>Entity Framework</span>
-                  <span>Web API</span>
-                  <span>SignalR</span>
+                  <span>.NET Core</span>
+                  <span>ASP.NET</span>
+                  <span>DevExpress</span>
+                  <span>IBM AS400</span>
                 </div>
               </div>
 
               <div className="skill-category">
-                <h4>Frontend</h4>
+                <h4>Learning Stack</h4>
                 <div className="skill-tags">
                   <span>React</span>
                   <span>TypeScript</span>
+                  <span>Golang</span>
                   <span>JavaScript</span>
                   <span>HTML5</span>
                   <span>CSS3</span>
@@ -97,34 +86,30 @@ const About = () => {
               </div>
 
               <div className="skill-category">
-                <h4>Banco de Dados</h4>
+                <h4>Databases</h4>
                 <div className="skill-tags">
-                  <span>SQL Server</span>
                   <span>PostgreSQL</span>
-                  <span>MongoDB</span>
-                  <span>Redis</span>
+                  <span>MySQL</span>
+                  <span>SQL Server</span>
                 </div>
               </div>
 
               <div className="skill-category">
-                <h4>DevOps & Cloud</h4>
+                <h4>Systems</h4>
                 <div className="skill-tags">
-                  <span>Azure</span>
-                  <span>Docker</span>
-                  <span>GitHub Actions</span>
-                  <span>Azure DevOps</span>
+                  <span>Windows</span>
+                  <span>Linux</span>
+                  <span>macOS</span>
                 </div>
               </div>
             </div>
 
             <div className="interests">
-              <h3>Interesses</h3>
+              <h3>Interests</h3>
               <ul>
-                <li>🚀 Novas tecnologias</li>
-                <li>📚 Aprendizado contínuo</li>
-                <li>🎮 Desenvolvimento de jogos</li>
-                <li>🏃‍♂️ Corrida e fitness</li>
-                <li>📸 Fotografia</li>
+                <li>🚀 New technologies</li>
+                <li>📚 Continuous learning</li>
+                <li>💻 Open source projects</li>
               </ul>
             </div>
           </div>
