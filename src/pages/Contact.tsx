@@ -19,6 +19,15 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
+  // Função para encodar dados do formulário
+  const encode = (data: Record<string, string>) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -34,17 +43,17 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      // Enviar para Netlify Forms
+      // Enviar para Netlify Forms usando encode recomendado para SPAs
       const response = await fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams({
+        body: encode({
           "form-name": "contact",
           name: formData.name,
           email: formData.email,
           subject: formData.subject,
           message: formData.message,
-        }).toString(),
+        }),
       });
 
       if (response.ok) {
