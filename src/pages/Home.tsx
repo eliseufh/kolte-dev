@@ -83,7 +83,11 @@ const Home = () => {
               <button className="btn btn-disabled" disabled>
                 [ PROJECTS - SOON ]
               </button>
-              <Link to="/contact" className="btn btn-secondary" onClick={handleNavigation}>
+              <Link
+                to="/contact"
+                className="btn btn-secondary"
+                onClick={handleNavigation}
+              >
                 [ SEND MESSAGE ]
               </Link>
             </div>
@@ -189,7 +193,11 @@ const Home = () => {
               &gt; MISSION: BUILD ROBUST & SCALABLE SOLUTIONS
               <br />
             </p>
-            <Link to="/about" className="btn btn-outline" onClick={handleNavigation}>
+            <Link
+              to="/about"
+              className="btn btn-outline"
+              onClick={handleNavigation}
+            >
               [ VIEW FULL STATS ]
             </Link>
           </div>
