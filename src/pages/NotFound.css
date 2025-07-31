@@ -1,0 +1,185 @@
+/* NotFound.css - Página 404 Pixel RPG */
+
+.not-found-page {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  background: var(--color-background);
+  position: relative;
+  margin-top: 100px;
+}
+
+.not-found-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(transparent 50%, rgba(255, 51, 51, 0.02) 50%);
+  background-size: 100% 4px;
+  pointer-events: none;
+  animation: errorScanlines 2s linear infinite;
+}
+
+@keyframes errorScanlines {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 4px; }
+}
+
+.error-section {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.error-terminal {
+  margin-bottom: 3rem;
+  border: 3px solid var(--color-danger);
+  box-shadow: 0 0 20px rgba(255, 51, 51, 0.3);
+}
+
+.error-terminal .terminal-header {
+  background: var(--color-danger);
+  color: var(--color-dark);
+  font-weight: bold;
+}
+
+.error-terminal .terminal-body {
+  background: var(--color-dark);
+  min-height: 300px;
+}
+
+.prompt.error {
+  color: var(--color-danger);
+}
+
+.error-text {
+  color: var(--color-danger);
+  font-weight: bold;
+  text-shadow: 0 0 5px var(--color-danger);
+}
+
+.success {
+  color: var(--color-primary);
+}
+
+.error-actions {
+  margin-bottom: 3rem;
+}
+
+.error-actions .pixel-title {
+  color: var(--color-danger);
+  margin-bottom: 1.5rem;
+  text-shadow: 
+    0 0 5px var(--color-danger),
+    0 0 10px var(--color-danger);
+}
+
+.error-actions .pixel-text {
+  margin-bottom: 2rem;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.action-buttons .btn {
+  min-width: 200px;
+  padding: 1rem 1.5rem;
+  font-size: 12px;
+}
+
+.error-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.stat-item {
+  background: var(--color-card);
+  border: 2px solid var(--color-border-secondary);
+  padding: 1.5rem;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.stat-item:hover {
+  border-color: var(--color-danger);
+  box-shadow: 0 0 10px rgba(255, 51, 51, 0.3);
+}
+
+.stat-item .label {
+  display: block;
+  color: var(--color-text-secondary);
+  font-size: 10px;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.stat-item .value {
+  display: block;
+  color: var(--color-text);
+  font-size: 14px;
+  font-weight: bold;
+  font-family: var(--font-pixel);
+}
+
+.error-code {
+  color: var(--color-danger);
+  font-size: 18px;
+  text-shadow: 0 0 5px var(--color-danger);
+  animation: pixelBlink 1.5s infinite;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .not-found-page {
+    padding: 1rem 0;
+  }
+
+  .error-terminal .terminal-body {
+    min-height: 250px;
+    font-size: 10px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .action-buttons .btn {
+    min-width: 250px;
+  }
+
+  .error-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .error-terminal .terminal-body {
+    font-size: 9px;
+    padding: 1rem;
+  }
+
+  .error-actions .pixel-title {
+    font-size: 16px;
+  }
+
+  .error-actions .pixel-text {
+    font-size: 12px;
+  }
+}
