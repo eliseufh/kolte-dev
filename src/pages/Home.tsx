@@ -24,7 +24,7 @@ const Home = () => {
                 </p>
                 <p className="terminal-line">
                   <span className="output">
-                    &gt; ELISEU SILVA - JUNIOR .NET DEVELOPER
+                    &gt; ELISEU SILVA - JUNIOR DEVELOPER
                   </span>
                 </p>
                 <p className="terminal-line">
@@ -43,12 +43,22 @@ const Home = () => {
                 </p>
                 <p className="terminal-line">
                   <span className="output">
-                    &gt; PRIMARY: C#, ASP.NET Core, React
+                    &gt; PRIMARY: C#, .NET Core, ASP.NET, AS400 IBM
                   </span>
                 </p>
                 <p className="terminal-line">
                   <span className="output">
-                    &gt; LEARNING: React, TypeScript
+                    &gt; DATABASES: PostgreSQL, MySQL
+                  </span>
+                </p>
+                <p className="terminal-line">
+                  <span className="output">
+                    &gt; LEARNING: React, TypeScript, Golang
+                  </span>
+                </p>
+                <p className="terminal-line">
+                  <span className="output">
+                    &gt; SYSTEMS: Windows, Linux, macOS
                   </span>
                 </p>
                 <p className="terminal-line">
@@ -63,9 +73,9 @@ const Home = () => {
               </div>
             </div>
             <div className="cta-buttons">
-              <a href="/projects" className="btn btn-primary">
-                [ VIEW PROJECTS ]
-              </a>
+              <button className="btn btn-disabled" disabled>
+                [ PROJECTS - SOON ]
+              </button>
               <a href="/contact" className="btn btn-secondary">
                 [ SEND MESSAGE ]
               </a>
@@ -93,20 +103,11 @@ const Home = () => {
                 </div>
               </div>
               <div className="status-item">
-                <span className="label">COFFEE:</span>
-                <div className="progress-bar">
-                  <div
-                    className="progress-fill coffee"
-                    style={{ width: "85%" }}
-                  ></div>
-                </div>
-              </div>
-              <div className="status-item">
                 <span className="label">CODE:</span>
                 <div className="progress-bar">
                   <div
                     className="progress-fill code"
-                    style={{ width: "95%" }}
+                    style={{ width: "75%" }}
                   ></div>
                 </div>
               </div>
@@ -121,48 +122,38 @@ const Home = () => {
           <h2 className="pixel-title large text-center">[ SKILL TREE ]</h2>
           <div className="skills-grid">
             <div className="skill-card pixel-card pixel-glow">
-              <h3 className="pixel-title medium">.NET FRAMEWORK</h3>
-              <div className="skill-level">
-                <span>Level: 25</span>
-                <div className="xp-bar">
-                  <div className="xp-fill" style={{ width: "95%" }}></div>
-                </div>
-              </div>
-              <p className="pixel-text">
-                C#, ASP.NET Core, Entity Framework, Web APIs
-              </p>
-            </div>
-            <div className="skill-card pixel-card pixel-glow">
-              <h3 className="pixel-title medium">FRONTEND MAGIC</h3>
-              <div className="skill-level">
-                <span>Level: 18</span>
-                <div className="xp-bar">
-                  <div className="xp-fill" style={{ width: "72%" }}></div>
-                </div>
-              </div>
-              <p className="pixel-text">
-                React, TypeScript, HTML5, CSS3, JavaScript
-              </p>
-            </div>
-            <div className="skill-card pixel-card pixel-glow">
-              <h3 className="pixel-title medium">DATABASE MASTERY</h3>
+              <h3 className="pixel-title medium">.NET ECOSYSTEM</h3>
               <div className="skill-level">
                 <span>Level: 22</span>
                 <div className="xp-bar">
                   <div className="xp-fill" style={{ width: "88%" }}></div>
                 </div>
               </div>
-              <p className="pixel-text">SQL Server, PostgreSQL, MongoDB</p>
+              <p className="pixel-text">
+                C#, .NET Core, ASP.NET, DevExpress, IBM AS400
+              </p>
             </div>
             <div className="skill-card pixel-card pixel-glow">
-              <h3 className="pixel-title medium">DEVOPS TACTICS</h3>
+              <h3 className="pixel-title medium">DATABASE MASTERY</h3>
               <div className="skill-level">
                 <span>Level: 20</span>
                 <div className="xp-bar">
                   <div className="xp-fill" style={{ width: "80%" }}></div>
                 </div>
               </div>
-              <p className="pixel-text">Docker, Azure, CI/CD, Git</p>
+              <p className="pixel-text">
+                PostgreSQL, MySQL, Data Design & Optimization
+              </p>
+            </div>
+            <div className="skill-card pixel-card pixel-glow">
+              <h3 className="pixel-title medium">LEARNING STACK</h3>
+              <div className="skill-level">
+                <span>Level: 15</span>
+                <div className="xp-bar">
+                  <div className="xp-fill" style={{ width: "60%" }}></div>
+                </div>
+              </div>
+              <p className="pixel-text">React, TypeScript, Golang, DevOps</p>
             </div>
           </div>
         </div>
@@ -171,27 +162,29 @@ const Home = () => {
       {/* About Preview */}
       <section className="about-preview">
         <div className="container">
-          <div className="about-content text-center">
-            <h2 className="pixel-title large">[ PLAYER PROFILE ]</h2>
-            <div className="profile-window">
-              <p className="pixel-text">
-                &gt; LOADING PLAYER DATA...
-                <br />
-                &gt; NAME: KOLTE
-                <br />
-                &gt; CLASS: FULL-STACK DEVELOPER
-                <br />
-                &gt; SPECIALIZATION: .NET BACKEND + REACT FRONTEND
-                <br />
-                &gt; STATUS: LEARNING NEW ABILITIES
-                <br />
-                &gt; MISSION: CREATE AWESOME SOFTWARE
-                <br />
-              </p>
-              <a href="/about" className="btn btn-outline">
-                [ VIEW FULL STATS ]
-              </a>
-            </div>
+          <h2 className="pixel-title large text-center">[ PLAYER PROFILE ]</h2>
+          <div className="profile-window">
+            <p className="pixel-text">
+              &gt; LOADING PLAYER DATA...
+              <br />
+              &gt; NAME: ELISEU SILVA
+              <br />
+              &gt; CLASS: JUNIOR FULL-STACK DEVELOPER
+              <br />
+              &gt; SPECIALIZATION: .NET CORE + LEGACY SYSTEMS
+              <br />
+              &gt; CURRENT ROLE: DEVELOPING & MAINTAINING FULL-STACK APPS
+              <br />
+              &gt; EXPERTISE: DEVEXPRESS + IBM AS400 INTEGRATION
+              <br />
+              &gt; STATUS: EXPANDING TO MODERN FRONTEND & BACKEND
+              <br />
+              &gt; MISSION: BUILD ROBUST & SCALABLE SOLUTIONS
+              <br />
+            </p>
+            <a href="/about" className="btn btn-outline">
+              [ VIEW FULL STATS ]
+            </a>
           </div>
         </div>
       </section>
