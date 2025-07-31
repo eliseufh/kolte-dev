@@ -1,8 +1,14 @@
 import { Link } from "react-router-dom";
+import { scrollToTop } from "../utils/scroll";
 import "./Home.css";
 import avatarImage from "../assets/avatar.jpg";
 
 const Home = () => {
+  // Função para garantir scroll to top
+  const handleNavigation = () => {
+    setTimeout(scrollToTop, 50);
+  };
+
   return (
     <div className="home">
       {/* Hero Section */}
@@ -77,7 +83,7 @@ const Home = () => {
               <button className="btn btn-disabled" disabled>
                 [ PROJECTS - SOON ]
               </button>
-              <Link to="/contact" className="btn btn-secondary">
+              <Link to="/contact" className="btn btn-secondary" onClick={handleNavigation}>
                 [ SEND MESSAGE ]
               </Link>
             </div>
@@ -183,7 +189,7 @@ const Home = () => {
               &gt; MISSION: BUILD ROBUST & SCALABLE SOLUTIONS
               <br />
             </p>
-            <Link to="/about" className="btn btn-outline">
+            <Link to="/about" className="btn btn-outline" onClick={handleNavigation}>
               [ VIEW FULL STATS ]
             </Link>
           </div>
