@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Home.css";
 import avatarImage from "../assets/avatar.jpg";
 
@@ -76,9 +77,9 @@ const Home = () => {
               <button className="btn btn-disabled" disabled>
                 [ PROJECTS - SOON ]
               </button>
-              <a href="/contact" className="btn btn-secondary">
+              <Link to="/contact" className="btn btn-secondary">
                 [ SEND MESSAGE ]
-              </a>
+              </Link>
             </div>
           </div>
           <div className="hero-image">
@@ -182,9 +183,9 @@ const Home = () => {
               &gt; MISSION: BUILD ROBUST & SCALABLE SOLUTIONS
               <br />
             </p>
-            <a href="/about" className="btn btn-outline">
+            <Link to="/about" className="btn btn-outline">
               [ VIEW FULL STATS ]
-            </a>
+            </Link>
           </div>
         </div>
       </section>
