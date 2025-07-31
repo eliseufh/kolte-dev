@@ -33,7 +33,7 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simular envio (em uma aplicação real, você enviaria para uma API)
+    // Simulate sending (in a real application, you would send to an API)
     setTimeout(() => {
       setIsSubmitting(false);
       setSubmitted(true);
@@ -46,13 +46,13 @@ const Contact = () => {
       <div className="contact-page">
         <div className="container">
           <div className="success-message">
-            <h1>Mensagem Enviada!</h1>
-            <p>Obrigado por entrar em contato. Responderei em breve!</p>
+            <h1>Message Sent!</h1>
+            <p>Thank you for reaching out. I'll respond soon!</p>
             <button
               className="btn btn-primary"
               onClick={() => setSubmitted(false)}
             >
-              Enviar Nova Mensagem
+              Send New Message
             </button>
           </div>
         </div>
@@ -64,36 +64,36 @@ const Contact = () => {
     <div className="contact-page">
       <div className="container">
         <section className="contact-hero">
-          <h1>Entre em Contato</h1>
+          <h1>Get In Touch</h1>
           <p className="lead">
-            Tem um projeto em mente? Quer conversar sobre tecnologia? Ficarei
-            feliz em ouvir de você!
+            Have a project in mind? Want to talk about technology? I'd be happy
+            to hear from you!
           </p>
         </section>
 
         <section className="contact-content">
           <div className="contact-info">
-            <h2>Vamos Conectar</h2>
+            <h2>Let's Connect</h2>
             <p>
-              Estou sempre aberto a novas oportunidades, colaborações e
-              conversas interessantes sobre tecnologia.
+              I'm always open to new opportunities, collaborations and
+              interesting conversations about technology.
             </p>
 
             <div className="contact-methods">
               <div className="contact-method">
                 <h3>📧 Email</h3>
-                <p>kolte@exemplo.com</p>
+                <p>eliseusilva.info@gmail.com</p>
               </div>
 
               <div className="contact-method">
                 <h3>💼 LinkedIn</h3>
                 <p>
                   <a
-                    href="https://linkedin.com/in/kolte"
+                    href="https://linkedin.com/in/eliseu03"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    linkedin.com/in/kolte
+                    linkedin.com/in/eliseu03
                   </a>
                 </p>
               </div>
@@ -102,44 +102,31 @@ const Contact = () => {
                 <h3>🐙 GitHub</h3>
                 <p>
                   <a
-                    href="https://github.com/kolte"
+                    href="https://github.com/koltee"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    github.com/kolte
-                  </a>
-                </p>
-              </div>
-
-              <div className="contact-method">
-                <h3>🐦 Twitter</h3>
-                <p>
-                  <a
-                    href="https://twitter.com/kolte"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    @kolte
+                    github.com/koltee
                   </a>
                 </p>
               </div>
             </div>
 
             <div className="availability">
-              <h3>Disponibilidade</h3>
+              <h3>Availability</h3>
               <p>
-                Atualmente <strong>disponível</strong> para projetos freelance e
-                oportunidades de trabalho remoto.
+                Currently <strong>available</strong> for freelance projects and
+                remote work opportunities.
               </p>
             </div>
           </div>
 
           <div className="contact-form-container">
             <form className="contact-form" onSubmit={handleSubmit}>
-              <h2>Envie uma Mensagem</h2>
+              <h2>Send a Message</h2>
 
               <div className="form-group">
-                <label htmlFor="name">Nome *</label>
+                <label htmlFor="name">Name *</label>
                 <input
                   type="text"
                   id="name"
@@ -147,7 +134,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  placeholder="Seu nome completo"
+                  placeholder="Your full name"
                 />
               </div>
 
@@ -160,12 +147,12 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  placeholder="seu@email.com"
+                  placeholder="your@email.com"
                 />
               </div>
 
               <div className="form-group">
-                <label htmlFor="subject">Assunto *</label>
+                <label htmlFor="subject">Subject *</label>
                 <input
                   type="text"
                   id="subject"
@@ -173,19 +160,19 @@ const Contact = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  placeholder="Sobre o que você gostaria de conversar?"
+                  placeholder="What would you like to talk about?"
                 />
               </div>
 
               <div className="form-group">
-                <label htmlFor="message">Mensagem *</label>
+                <label htmlFor="message">Message *</label>
                 <textarea
                   id="message"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  placeholder="Descreva seu projeto, ideia ou dúvida..."
+                  placeholder="Describe your project, idea, or question..."
                   rows={6}
                 />
               </div>
@@ -195,7 +182,7 @@ const Contact = () => {
                 className="btn btn-primary submit-btn"
                 disabled={isSubmitting}
               >
-                {isSubmitting ? "Enviando..." : "Enviar Mensagem"}
+                {isSubmitting ? "Sending..." : "Send Message"}
               </button>
             </form>
           </div>
