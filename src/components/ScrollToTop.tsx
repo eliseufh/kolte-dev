@@ -8,7 +8,7 @@ const ScrollToTop = () => {
   useEffect(() => {
     // Força o scroll imediatamente
     forceScrollToTop();
-    
+
     // Adiciona um delay para garantir que funcione após a renderização
     const timer = setTimeout(() => {
       forceScrollToTop();
