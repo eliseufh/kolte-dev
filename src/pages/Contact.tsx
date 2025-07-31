@@ -33,12 +33,32 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate sending (in a real application, you would send to an API)
-    setTimeout(() => {
+    try {
+      // Enviar para Netlify Forms
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({
+          "form-name": "contact",
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        }).toString(),
+      });
+
+      if (response.ok) {
+        setIsSubmitting(false);
+        setSubmitted(true);
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      } else {
+        throw new Error("Erro ao enviar formulário");
+      }
+    } catch (error) {
+      console.error("Erro:", error);
       setIsSubmitting(false);
-      setSubmitted(true);
-      setFormData({ name: "", email: "", subject: "", message: "" });
-    }, 2000);
+      alert("Erro ao enviar mensagem. Tente novamente.");
+    }
   };
 
   if (submitted) {
@@ -122,7 +142,24 @@ const Contact = () => {
           </div>
 
           <div className="contact-form-container">
-            <form className="contact-form" onSubmit={handleSubmit}>
+            <form
+              className="contact-form"
+              onSubmit={handleSubmit}
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+            >
+              <input type="hidden" name="form-name" value="contact" />
+
+              {/* Campo honeypot para prevenir spam */}
+              <div style={{ display: "none" }}>
+                <label>
+                  Don't fill this out if you're human:
+                  <input name="bot-field" />
+                </label>
+              </div>
+
               <h2>Send a Message</h2>
 
               <div className="form-group">
