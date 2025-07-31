@@ -8,6 +8,6 @@ Este é um projeto pessoal, mas sugestões e feedback são sempre bem-vindos!
 
 ## 📝 Licença
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está sob a licença MIT.
 
 ⭐ Desenvolvido com React e muito ☕ por [Kolte](https://github.com/kolte)
