@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { scrollToTop } from "../utils/scroll";
 import "./Home.css";
-import avatarImage from "../assets/avatar.jpg";
+import avatarImage from "../assets/avatar.png";
 
 const Home = () => {
   // Função para garantir scroll to top
