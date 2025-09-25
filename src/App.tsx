@@ -107,7 +107,7 @@ function App() {
             <div className="about-photo">
               <div className="photo-container">
                 <img
-                  src="/src/assets/eu.jpeg"
+                  src="../src/assets/image.jpeg"
                   alt="Eu"
                   className="profile-img"
                 />
