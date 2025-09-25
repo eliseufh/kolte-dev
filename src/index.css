@@ -1,4 +1,4 @@
-/* Modern CSS Reset */
+/* CSS Reset */
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -13,8 +13,11 @@ html, body {
 }
 
 body {
+  font-family: 'Geist Mono', 'Courier New', monospace;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-color: #151B2B;
+  color: #333;
 }
 
 img, picture, video, canvas, svg {
