@@ -1,0 +1,7 @@
+<!-- Placeholder para foto do perfil - substitua por sua foto real -->
+<svg width="280" height="350" viewBox="0 0 280 350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="280" height="350" fill="#2a2a2a"/>
+  <circle cx="140" cy="120" r="40" fill="#4a4a4a"/>
+  <rect x="100" y="180" width="80" height="100" fill="#4a4a4a" rx="8"/>
+  <text x="140" y="320" font-family="Arial, sans-serif" font-size="16" fill="#888" text-anchor="middle">Sua foto aqui</text>
+</svg>
