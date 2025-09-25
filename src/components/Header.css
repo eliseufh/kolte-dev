@@ -55,13 +55,72 @@
   font-weight: 600;
 }
 
-@media (max-width: 768px) {
+/* Header Responsividade - Mobile First */
+@media (max-width: 320px) {
+  .header {
+    padding: 0.15rem 0;
+  }
+  
+  .container {
+    padding: 0 0.8rem;
+  }
+  
+  .nav {
+    gap: 1rem;
+  }
+  
+  .nav-link {
+    padding: 0.4rem;
+    font-size: 0.8rem;
+  }
+  
+  .nav-link .text {
+    display: none;
+  }
+  
+  .nav-link .icon {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+  .header {
+    padding: 0.15rem 0;
+  }
+  
   .container {
     padding: 0 1rem;
   }
   
   .nav {
-    gap: 2rem;
+    gap: 1.3rem;
+  }
+  
+  .nav-link {
+    padding: 0.45rem;
+    font-size: 0.85rem;
+  }
+  
+  .nav-link .text {
+    display: none;
+  }
+  
+  .nav-link .icon {
+    font-size: 1.7rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .header {
+    padding: 0.18rem 0;
+  }
+  
+  .container {
+    padding: 0 1.5rem;
+  }
+  
+  .nav {
+    gap: 1.8rem;
   }
   
   .nav-link {
@@ -78,8 +137,58 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header {
+    padding: 0.2rem 0;
+  }
+  
+  .container {
+    padding: 0 2rem;
+  }
+  
   .nav {
-    gap: 1.5rem;
+    gap: 2.5rem;
+  }
+  
+  .nav-link {
+    padding: 0.6rem 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .nav-link .text {
+    display: inline;
+    font-size: 0.9rem;
+  }
+  
+  .nav-link .icon {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .header {
+    padding: 0.2rem 0;
+  }
+  
+  .container {
+    padding: 0 2rem;
+  }
+  
+  .nav {
+    gap: 4rem;
+  }
+  
+  .nav-link {
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+  }
+  
+  .nav-link .text {
+    display: inline;
+    font-size: 1rem;
+  }
+  
+  .nav-link .icon {
+    font-size: 1.4rem;
   }
 }

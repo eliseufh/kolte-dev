@@ -135,31 +135,105 @@ p {
   }
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
+/* Responsividade - Mobile First */
+@media (max-width: 320px) {
+  /* Celulares muito pequenos */
   .main-content {
-    padding: 3.5rem 1rem 2rem;
-  }
-  
-  h1 {
-    font-size: 2.5em;
+    padding: 2rem 0.8rem 2rem;
+    margin-top: 50px;
   }
   
   .name-title {
-    font-size: 2.8em;
+    font-size: 1.8em;
+    flex-direction: column;
+    gap: 0.2em;
+    margin-left: 0;
+  }
+  
+  .typing-emoticon {
+    font-size: 0.9em;
+    min-width: 2.5em;
+  }
+  
+  .greeting {
+    font-size: 1em;
+  }
+  
+  .description {
+    font-size: 0.95em;
+    margin-bottom: 1.5rem;
+    padding: 0 0.5rem;
+  }
+  
+  .email-button {
+    font-size: 0.8rem;
+    padding: 0.6rem 1rem;
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+  /* Celulares pequenos a médios */
+  .main-content {
+    padding: 2.5rem 1rem 2rem;
+    margin-top: 50px;
+  }
+  
+  .name-title {
+    font-size: 2.2em;
     flex-direction: column;
     gap: 0.3em;
-    align-items: center;
-    justify-content: center;
-    margin-left: 1em;
+    margin-left: 0;
+  }
+  
+  .typing-emoticon {
+    font-size: 0.95em;
+    min-width: 3em;
+  }
+  
+  .greeting {
+    font-size: 1.1em;
+  }
+  
+  .description {
+    font-size: 1em;
+    margin-bottom: 1.6rem;
+    padding: 0 0.5rem;
+  }
+  
+  .email-button {
+    font-size: 0.85rem;
+    padding: 0.6rem 1.2rem;
+    margin-top: 1.2rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Celulares grandes e tablets pequenos */
+  .main-content {
+    padding: 3rem 1.5rem 2rem;
+    margin-top: 50px;
+  }
+  
+  .name-title {
+    font-size: 2.6em;
+    flex-direction: row;
+    gap: 0.6em;
+    margin-left: 0.5em;
   }
   
   .typing-emoticon {
     font-size: 1em;
   }
   
-  p {
-    font-size: 1.1em;
+  .greeting {
+    font-size: 1.15em;
+  }
+  
+  .description {
+    font-size: 1.05em;
+    margin-bottom: 1.7rem;
+    padding: 0 1rem;
   }
   
   .email-button {
@@ -169,19 +243,60 @@ p {
   }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Tablets */
+  .main-content {
+    padding: 3.5rem 2rem 2rem;
+    margin-top: 50px;
+  }
+  
   .name-title {
-    font-size: 2.2em;
+    font-size: 2.8em;
+    gap: 0.7em;
+    margin-left: 1em;
   }
   
   .typing-emoticon {
     font-size: 1em;
   }
   
+  .greeting {
+    font-size: 1.2em;
+  }
+  
+  .description {
+    font-size: 1.1em;
+    margin-bottom: 1.8rem;
+    max-width: 700px;
+  }
+  
   .email-button {
-    font-size: 0.85rem;
-    padding: 0.6rem 1.2rem;
-    margin-top: 1.2rem;
+    font-size: 0.95rem;
+    padding: 0.75rem 1.4rem;
+    margin-top: 1.8rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  /* Desktops */
+  .main-content {
+    padding: 4rem 2rem;
+    max-width: 900px;
+  }
+  
+  .name-title {
+    font-size: 3.2em;
+    gap: 0.8em;
+    margin-left: 1.5em;
+  }
+  
+  .greeting {
+    font-size: 1.3em;
+  }
+  
+  .description {
+    font-size: 1.2em;
+    max-width: 800px;
   }
 }
 
@@ -247,7 +362,7 @@ p {
 .photo-container {
   position: relative;
   width: 280px;
-  height: 350px;
+  height: 420px;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -294,10 +409,50 @@ p {
   color: white;
 }
 
-/* Responsividade da seção About */
-@media (max-width: 768px) {
+/* Responsividade da seção About - Mobile First */
+@media (max-width: 320px) {
   .about-section {
-    padding: 3rem 0;
+    padding: 2rem 0;
+  }
+  
+  .about-container {
+    padding: 0 0.8rem;
+  }
+  
+  .section-title {
+    font-size: 1.6em;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .about-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-align: left;
+  }
+  
+  .about-photo {
+    margin-top: 0;
+  }
+  
+  .photo-container {
+    width: 200px;
+    height: 300px;
+  }
+  
+  .photo-overlay p {
+    font-size: 0.9em;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+  .about-section {
+    padding: 2.5rem 0;
   }
   
   .about-container {
@@ -305,8 +460,49 @@ p {
   }
   
   .section-title {
+    font-size: 1.8em;
+    margin-bottom: 1.8rem;
+    text-align: center;
+  }
+  
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .about-text {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    text-align: left;
+  }
+  
+  .about-photo {
+    margin-top: 0;
+  }
+  
+  .photo-container {
+    width: 220px;
+    height: 330px;
+  }
+  
+  .photo-overlay p {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .about-section {
+    padding: 3rem 0;
+  }
+  
+  .about-container {
+    padding: 0 1.5rem;
+  }
+  
+  .section-title {
     font-size: 2em;
     margin-bottom: 2rem;
+    text-align: center;
   }
   
   .about-content {
@@ -316,31 +512,89 @@ p {
   
   .about-text {
     font-size: 1rem;
+    line-height: 1.7;
+    text-align: left;
+  }
+  
+  .about-photo {
+    margin-top: 0;
+    order: -1; /* Move a foto para cima */
   }
   
   .photo-container {
     width: 250px;
-    height: 300px;
+    height: 380px;
   }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about-section {
+    padding: 3.5rem 0;
+  }
+  
+  .about-container {
+    padding: 0 2rem;
+    max-width: 900px;
+  }
+  
   .section-title {
-    font-size: 1.8em;
+    font-size: 2.2em;
+    margin-bottom: 2.5rem;
+  }
+  
+  .about-content {
+    grid-template-columns: 1.8fr 1fr;
+    gap: 3rem;
+    align-items: start;
   }
   
   .about-text {
-    font-size: 0.95rem;
-    line-height: 1.7;
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+  
+  .about-photo {
+    margin-top: -2rem;
   }
   
   .photo-container {
-    width: 220px;
-    height: 270px;
+    width: 260px;
+    height: 390px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .about-section {
+    padding: 4rem 0;
   }
   
-  .photo-overlay p {
-    font-size: 1em;
+  .about-container {
+    max-width: 1100px;
+    padding: 0 2rem;
+  }
+  
+  .section-title {
+    font-size: 2.5em;
+    margin-bottom: 3rem;
+  }
+  
+  .about-content {
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+  }
+  
+  .about-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  
+  .about-photo {
+    margin-top: -4rem;
+  }
+  
+  .photo-container {
+    width: 300px;
+    height: 450px;
   }
 }
 
@@ -468,14 +722,136 @@ p {
   transform: translateY(-2px);
 }
 
-/* Responsividade da seção Experience */
-@media (max-width: 768px) {
+/* Responsividade da seção Experience - Mobile First */
+@media (max-width: 320px) {
+  .experience-section {
+    padding: 2rem 0;
+  }
+  
+  .experience-container {
+    padding: 0 0.8rem;
+    max-width: 100%;
+  }
+  
+  .tabs-nav {
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 1.5rem;
+  }
+  
+  .tab-button {
+    padding: 0.6rem 0.8rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0;
+    text-align: left;
+    font-size: 0.8rem;
+  }
+  
+  .tab-button.active {
+    border-bottom-color: #D18701;
+    border-left: 3px solid #D18701;
+    background: rgba(209, 135, 1, 0.1);
+  }
+  
+  .experience-details {
+    padding: 1rem;
+  }
+  
+  .experience-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+  
+  .job-title {
+    font-size: 1.2em;
+    line-height: 1.3;
+  }
+  
+  .company-name {
+    font-size: 1em;
+  }
+  
+  .experience-period {
+    font-size: 0.75em;
+    padding: 0.3rem 0.6rem;
+  }
+  
+  .job-description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-align: left;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+  .experience-section {
+    padding: 2.5rem 0;
+  }
+  
+  .experience-container {
+    padding: 0 1rem;
+    max-width: 100%;
+  }
+  
+  .tabs-nav {
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 1.8rem;
+  }
+  
+  .tab-button {
+    padding: 0.7rem 0.8rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0;
+    text-align: left;
+    font-size: 0.9rem;
+  }
+  
+  .tab-button.active {
+    border-bottom-color: #D18701;
+    border-left: 3px solid #D18701;
+    background: rgba(209, 135, 1, 0.1);
+  }
+  
+  .experience-details {
+    padding: 1.5rem;
+  }
+  
+  .experience-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+  }
+  
+  .job-title {
+    font-size: 1.3em;
+    line-height: 1.3;
+  }
+  
+  .company-name {
+    font-size: 1.05em;
+  }
+  
+  .experience-period {
+    font-size: 0.8em;
+    padding: 0.4rem 0.7rem;
+  }
+  
+  .job-description {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    text-align: left;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
   .experience-section {
     padding: 3rem 0;
   }
   
   .experience-container {
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     max-width: 100%;
   }
   
@@ -490,11 +866,13 @@ p {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 0;
     text-align: left;
+    font-size: 0.95rem;
   }
   
   .tab-button.active {
-    border-bottom-color: #3b82f6;
-    border-left: 3px solid #3b82f6;
+    border-bottom-color: #D18701;
+    border-left: 3px solid #D18701;
+    background: rgba(209, 135, 1, 0.1);
   }
   
   .experience-details {
@@ -511,29 +889,124 @@ p {
     font-size: 1.5em;
   }
   
+  .company-name {
+    font-size: 1.1em;
+  }
+  
+  .experience-period {
+    font-size: 0.85em;
+    padding: 0.4rem 0.8rem;
+  }
+  
   .job-description {
     font-size: 1rem;
     text-align: left;
   }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 769px) and (max-width: 1024px) {
+  .experience-section {
+    padding: 3.5rem 0;
+  }
+  
   .experience-container {
-    padding: 0 0.5rem;
+    padding: 0 2rem;
+    max-width: 95%;
+  }
+  
+  .tabs-nav {
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-bottom: 2.5rem;
   }
   
   .tab-button {
-    font-size: 0.9rem;
-    padding: 0.7rem 0.8rem;
+    padding: 0.9rem 1.2rem;
+    border-bottom: 3px solid transparent;
+    border-radius: 0;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+  
+  .tab-button.active {
+    border-bottom-color: #D18701;
+    background: rgba(209, 135, 1, 0.1);
   }
   
   .experience-details {
-    padding: 1.5rem;
+    padding: 2.5rem;
+  }
+  
+  .experience-header {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
   }
   
   .job-title {
-    font-size: 1.3em;
+    font-size: 1.7em;
   }
+  
+  .company-name {
+    font-size: 1.15em;
+  }
+  
+  .job-description {
+    font-size: 1.05rem;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1025px) {
+  .experience-section {
+    padding: 4rem 0;
+  }
+  
+  .experience-container {
+    max-width: 1000px;
+    padding: 0 2rem;
+  }
+  
+  .tabs-nav {
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .tab-button {
+    padding: 1rem 1.5rem;
+    border-bottom: 3px solid transparent;
+    font-size: 1rem;
+  }
+  
+  .tab-button.active {
+    border-bottom-color: #D18701;
+    background: rgba(209, 135, 1, 0.1);
+  }
+  
+  .experience-details {
+    padding: 3rem;
+  }
+  
+  .experience-header {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .job-title {
+    font-size: 1.8em;
+  }
+  
+  .company-name {
+    font-size: 1.2em;
+  }
+  
+  .job-description {
+    font-size: 1.1rem;
+    text-align: left;
+  }
+}
   
   .company-name {
     font-size: 1.1em;
@@ -552,7 +1025,6 @@ p {
     font-size: 0.8em;
     padding: 0.4rem 0.8rem;
   }
-}
 
 /* Footer */
 .footer {
@@ -592,11 +1064,36 @@ p {
   margin-bottom: 0 !important;
 }
 
-/* Footer Responsividade */
-@media (max-width: 768px) {
+/* Footer Responsividade - Mobile First */
+@media (max-width: 320px) {
   .footer {
-    padding: 1.5rem 0;
-    margin-top: 3rem;
+    padding: 1.2rem 0;
+    margin-top: 2rem;
+  }
+  
+  .footer-content {
+    padding: 0 0.8rem;
+  }
+  
+  .footer-content p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+  
+  .tech-stack {
+    font-size: 0.75rem;
+  }
+  
+  .copyright {
+    font-size: 0.7rem !important;
+    margin-top: 0.8rem !important;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+  .footer {
+    padding: 1.4rem 0;
+    margin-top: 2.5rem;
   }
   
   .footer-content {
@@ -604,20 +1101,91 @@ p {
   }
   
   .footer-content p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+  
+  .tech-stack {
+    font-size: 0.8rem;
+  }
+  
+  .copyright {
+    font-size: 0.75rem !important;
+    margin-top: 0.9rem !important;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .footer {
+    padding: 1.6rem 0;
+    margin-top: 3rem;
+  }
+  
+  .footer-content {
+    padding: 0 1.5rem;
+  }
+  
+  .footer-content p {
     font-size: 0.9rem;
+    line-height: 1.6;
   }
   
   .tech-stack {
     font-size: 0.85rem;
   }
-}
-
-@media (max-width: 480px) {
-  .footer-content p {
-    font-size: 0.85rem;
-  }
   
   .copyright {
     font-size: 0.8rem !important;
+    margin-top: 1rem !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer {
+    padding: 1.8rem 0;
+    margin-top: 3.5rem;
+  }
+  
+  .footer-content {
+    padding: 0 2rem;
+  }
+  
+  .footer-content p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .tech-stack {
+    font-size: 0.9rem;
+  }
+  
+  .copyright {
+    font-size: 0.82rem !important;
+    margin-top: 1rem !important;
+  }
+}
+
+@media (min-width: 1025px) {
+  .footer {
+    padding: 2rem 0;
+    margin-top: 4rem;
+  }
+  
+  .footer-content {
+    padding: 0 2rem;
+  }
+  
+  .footer-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .tech-stack {
+    font-size: 0.95rem;
+  }
+  
+  .copyright {
+    font-size: 0.85rem !important;
+    margin-top: 1rem !important;
   }
 }
