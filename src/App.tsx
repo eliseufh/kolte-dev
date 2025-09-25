@@ -97,7 +97,7 @@ function App() {
               <p>
                 Sou <span className="highlight">otimista</span> e busco viver
                 uma vida onde <span className="highlight">Cristo</span> é o
-                centro e fazer a vontade dele.
+                centro e fazer a vontade dEle.
               </p>
               <p>
                 Nascido e criado no <span className="highlight">Brasil</span>,
