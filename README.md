@@ -10,5 +10,3 @@ Portfólio pessoal moderno desenvolvido com React, TypeScript e Vite, apresentan
 - **React Icons** para ícones
 - **Google Fonts** (Geist Mono)
 - **Netlify** para deploy automático
-
-_Criado com ❤️ por Eliseu Silva_
