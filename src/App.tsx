@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./components/Header";
 import { useState, useEffect, useMemo } from "react";
 import { MdEmail } from "react-icons/md";
+import profileImage from "./assets/image.jpeg";
 
 function App() {
   const [currentEmoticon, setCurrentEmoticon] = useState(0);
@@ -106,11 +107,7 @@ function App() {
             </div>
             <div className="about-photo">
               <div className="photo-container">
-                <img
-                  src="../src/assets/image.jpeg"
-                  alt="Eu"
-                  className="profile-img"
-                />
+                <img src={profileImage} alt="Eu" className="profile-img" />
                 <div className="photo-overlay">
                   <p>Eu</p>
                 </div>
