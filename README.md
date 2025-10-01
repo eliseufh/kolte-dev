@@ -1,12 +1,12 @@
-# Kolte Dev - Portfólio Pessoal
+# Kolte Dev - Personal Portfolio
 
-Portfólio pessoal moderno desenvolvido com React, TypeScript e Vite, apresentando minha experiência profissional e habilidades técnicas.
+Modern personal portfolio developed with React, TypeScript and Vite, showcasing my professional experience and technical skills.
 
-## 🚀 Tecnologias
+## 🚀 Technologies
 
-- **React 18** com TypeScript
-- **Vite** como bundler e dev server
-- **CSS3** com Grid e Flexbox
-- **React Icons** para ícones
+- **React 18** with TypeScript
+- **Vite** as bundler and dev server
+- **CSS3** with Grid and Flexbox
+- **React Icons** for icons
 - **Google Fonts** (Geist Mono)
-- **Netlify** para deploy automático
+- **Netlify** for automatic deployment
