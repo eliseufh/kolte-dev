@@ -31,7 +31,7 @@ function App() {
           }
         }
       },
-      isDeleting ? 100 : 150
+      isDeleting ? 100 : 150,
     ); // Delete vs type speed
 
     return () => clearTimeout(timeout);
@@ -48,7 +48,7 @@ function App() {
           "• Developed and maintained robust full-stack applications using .NET Core (C#), integrating DevExpress components and IBM AS400 legacy systems to ensure operational efficiency.\n\n• Designed and managed optimized relational databases, ensuring high integrity and performance in critical data handling.\n\n• Created responsive and intuitive front-end interfaces, focused on excellent user experience and performance.\n\n• Acted on continuous system improvement through rigorous testing and implementation of development best practices.",
       },
     ],
-    []
+    [],
   );
 
   const handleEmailClick = () => {
@@ -95,9 +95,11 @@ function App() {
                 engineer.
               </p>
               <p>
-                I'm <span className="highlight">optimistic</span> and seek to
-                live a life where <span className="highlight">Christ</span> is
-                the center and do His will.
+                I'm <span className="highlight">passionate</span> about{" "}
+                <span className="highlight">traveling</span> and exploring new
+                cultures, always seeking{" "}
+                <span className="highlight">adventure</span> and{" "}
+                <span className="highlight">growth</span>.
               </p>
               <p>
                 Born and raised in <span className="highlight">Brazil</span>,
